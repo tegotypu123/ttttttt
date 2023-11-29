@@ -1,8 +1,14 @@
 package oop;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Loops {
 
     static String[] tablica;
+
+    List<String> list = new ArrayList<>();
+    List<String> List = new ArrayList<>();
 
     //psvm -> public static void main(String[] args) {
     public static void main(String[] args) {

@@ -13,11 +13,25 @@ public class Animal {
     double liczbaZmiennoprzecinkowaZDwomaMiejscamiPoPrzecinku;
 
     long caloriesCounter = 0L;
+    int speed = 0;
 
     public Animal(String specie) {
         this.specie = specie;
     }
 
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public void move(int distance){
+        if(speed == 0){
+            System.out.println("leze i nigdzie sie nie ruszam.");
+        } else {
+          double timeToReach = (double) distance / speed;
+          System.out.println("Poruszam sie z prędkością: ["
+          + speed + " m/s ].Za: [" + timeToReach +"] sekund dotre o celu.");
+        }
+}
     public void speak() {
         System.out.println("My name is " + specie);
     }
